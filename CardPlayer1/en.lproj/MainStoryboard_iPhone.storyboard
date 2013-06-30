@@ -30,13 +30,24 @@
                                     <action selector="flipCard:" destination="2" eventType="touchUpInside" id="gPO-Gb-21g"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCW-Dx-FbB">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iW4-0V-B3R" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="2lc-o5-YeR"/>
+                            <constraint firstAttribute="bottom" secondItem="SCW-Dx-FbB" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="2L4-d9-gHS"/>
+                            <constraint firstAttribute="trailing" secondItem="SCW-Dx-FbB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="dnk-0j-H74"/>
+                            <constraint firstItem="SCW-Dx-FbB" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="egR-ra-mWP"/>
                             <constraint firstItem="iW4-0V-B3R" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="mKt-GE-3TS"/>
+                            <constraint firstItem="SCW-Dx-FbB" firstAttribute="centerX" secondItem="iW4-0V-B3R" secondAttribute="centerX" type="default" id="yAV-F7-RA8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flipCountLabel" destination="SCW-Dx-FbB" id="KcT-fl-eE9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,6 +58,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CardPlayerViewController.h"/>
             <relationships>
                 <relationship kind="action" name="flipCard:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="flipCountLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

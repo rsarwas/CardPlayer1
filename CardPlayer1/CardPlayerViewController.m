@@ -10,6 +10,8 @@
 
 @interface CardPlayerViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *flipCountLabel;
+
 @end
 
 @implementation CardPlayerViewController
