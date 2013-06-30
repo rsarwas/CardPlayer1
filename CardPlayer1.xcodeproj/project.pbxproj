@@ -20,6 +20,7 @@
 		591003641780DCA50089F37A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591003621780DCA50089F37A /* MainStoryboard_iPad.storyboard */; };
 		591003671780DCA50089F37A /* CardPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591003661780DCA50089F37A /* CardPlayerViewController.m */; };
 		591003701780E50C0089F37A /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5910036F1780E50C0089F37A /* Card.m */; };
+		591003731780F1FD0089F37A /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 591003721780F1FD0089F37A /* Deck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		591003661780DCA50089F37A /* CardPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardPlayerViewController.m; sourceTree = "<group>"; };
 		5910036E1780E50C0089F37A /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = CardPlayer1/Model/Card.h; sourceTree = "<group>"; };
 		5910036F1780E50C0089F37A /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = CardPlayer1/Model/Card.m; sourceTree = "<group>"; };
+		591003711780F1FD0089F37A /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = CardPlayer1/Model/Deck.h; sourceTree = "<group>"; };
+		591003721780F1FD0089F37A /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = CardPlayer1/Model/Deck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 			children = (
 				5910036E1780E50C0089F37A /* Card.h */,
 				5910036F1780E50C0089F37A /* Card.m */,
+				591003711780F1FD0089F37A /* Deck.h */,
+				591003721780F1FD0089F37A /* Deck.m */,
 			);
 			name = Model;
 			path = ..;
@@ -196,6 +201,7 @@
 				591003581780DCA50089F37A /* CardPlayerAppDelegate.m in Sources */,
 				591003671780DCA50089F37A /* CardPlayerViewController.m in Sources */,
 				591003701780E50C0089F37A /* Card.m in Sources */,
+				591003731780F1FD0089F37A /* Deck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
