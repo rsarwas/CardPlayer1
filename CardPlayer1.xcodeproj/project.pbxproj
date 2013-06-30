@@ -19,6 +19,7 @@
 		591003611780DCA50089F37A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5910035F1780DCA50089F37A /* MainStoryboard_iPhone.storyboard */; };
 		591003641780DCA50089F37A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591003621780DCA50089F37A /* MainStoryboard_iPad.storyboard */; };
 		591003671780DCA50089F37A /* CardPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591003661780DCA50089F37A /* CardPlayerViewController.m */; };
+		591003701780E50C0089F37A /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5910036F1780E50C0089F37A /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		591003631780DCA50089F37A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		591003651780DCA50089F37A /* CardPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardPlayerViewController.h; sourceTree = "<group>"; };
 		591003661780DCA50089F37A /* CardPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardPlayerViewController.m; sourceTree = "<group>"; };
+		5910036E1780E50C0089F37A /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = CardPlayer1/Model/Card.h; sourceTree = "<group>"; };
+		5910036F1780E50C0089F37A /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = CardPlayer1/Model/Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 		5910034D1780DCA50089F37A /* CardPlayer1 */ = {
 			isa = PBXGroup;
 			children = (
+				5910036D1780E4AD0089F37A /* Model */,
 				591003561780DCA50089F37A /* CardPlayerAppDelegate.h */,
 				591003571780DCA50089F37A /* CardPlayerAppDelegate.m */,
 				5910035F1780DCA50089F37A /* MainStoryboard_iPhone.storyboard */,
@@ -108,6 +112,16 @@
 				5910035D1780DCA50089F37A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5910036D1780E4AD0089F37A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5910036E1780E50C0089F37A /* Card.h */,
+				5910036F1780E50C0089F37A /* Card.m */,
+			);
+			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +195,7 @@
 				591003541780DCA50089F37A /* main.m in Sources */,
 				591003581780DCA50089F37A /* CardPlayerAppDelegate.m in Sources */,
 				591003671780DCA50089F37A /* CardPlayerViewController.m in Sources */,
+				591003701780E50C0089F37A /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
