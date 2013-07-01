@@ -57,7 +57,7 @@
 }
 
 -(NSString *)description {
-    return [NSString stringWithFormat:@"%@%@", Card.suits[self.suit], Card.ranks[self.rank]];
+    return [NSString stringWithFormat:@"%@%@", Card.ranks[self.rank], Card.suits[self.suit]];
 }
 
 @end
