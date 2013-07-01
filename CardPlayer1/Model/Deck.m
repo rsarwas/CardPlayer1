@@ -24,6 +24,8 @@ NSMutableArray *_deck;
         }
     }
     
+    NSLog(@"Created a deck with %lu cards", (unsigned long)_deck.count);
+    
     return self;        
 }
 
@@ -38,10 +40,12 @@ NSMutableArray *_deck;
     if (self.isEmpty)
         return card;
     
-    NSUInteger randomIndex = 0;
+    NSUInteger randomIndex = rand() % _deck.count;
     card = _deck[randomIndex];
     [_deck removeObjectAtIndex:randomIndex];
-    
+
+    NSLog(@"Drew %@ at index %lu; %lu cards remaining", card, (unsigned long)randomIndex, (unsigned long)_deck.count);
+
     return card;
 }
 

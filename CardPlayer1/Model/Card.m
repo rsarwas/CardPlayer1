@@ -41,7 +41,7 @@
     
     if (Card.ranks.count <= rank)
     {
-        NSLog(@"Rank (%lu) is out of range [0..%lu]", (unsigned long)suit, (unsigned long)Card.ranks.count);
+        NSLog(@"Rank (%lu) is out of range [0..%lu]", (unsigned long)rank, (unsigned long)Card.ranks.count);
         return nil;
     }
     
@@ -57,7 +57,7 @@
 }
 
 -(NSString *)description {
-    return [NSString stringWithFormat:@"%@%@", Card.suits[self.suit], Card.ranks[self.suit]];
+    return [NSString stringWithFormat:@"%@%@", Card.suits[self.suit], Card.ranks[self.rank]];
 }
 
 @end

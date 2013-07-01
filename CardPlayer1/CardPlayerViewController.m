@@ -19,7 +19,9 @@
 
 @implementation CardPlayerViewController
 
-- (Deck *) getCards{
+@synthesize cards = _cards;
+
+- (Deck *) cards {
     if (!_cards)
         _cards = [[Deck alloc] init];
     return _cards;
